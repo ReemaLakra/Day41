@@ -24,7 +24,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
     EditText ename, eloc,enamer;
     TextView tv,tv2;
-    String sname,sloc,snamer;
+    String sname,sloc;
     FirebaseFirestore db;
     
     //I am from Repository
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ename=findViewById(R.id.Name);
         eloc=findViewById(R.id.Location);
-        enamer=findViewById(R.id.RName);
         tv=findViewById(R.id.textView);
         tv2=findViewById(R.id.textView2);
          db = FirebaseFirestore.getInstance();
@@ -72,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void rtv(View view)
     {
-        snamer=enamer.getText().toString();
 
         db.collection("users")
                 .get()
@@ -83,7 +81,9 @@ public class MainActivity extends AppCompatActivity {
                             String res="";
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d("RTAG", document.getId() + " => " + document.getData());
+                                res+=document.getData().get("first").toString()+" "+document.getData().get("location").toString()+"\n";
                             }
+                            tv2.setText(res);
                         } else {
                             Log.w("RTAG", "Error getting documents.", task.getException());
                         }
