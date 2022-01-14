@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tv,tv2;
     String sname,sloc,snamer;
     FirebaseFirestore db;
+    
+    //I am from Repository
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
