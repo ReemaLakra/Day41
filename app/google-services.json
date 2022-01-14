@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390929704082",
+    "project_id": "myprojectfb-bece2",
+    "storage_bucket": "myprojectfb-bece2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390929704082:android:7e1e6f7fba56d67351b24b",
+        "android_client_info": {
+          "package_name": "com.example.day41"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390929704082-r0nj58255doamjkhgvct9ag029hphpea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlOPck1u3fb2qJ6PoDxKCZbXxMweBxNGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390929704082-r0nj58255doamjkhgvct9ag029hphpea.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
